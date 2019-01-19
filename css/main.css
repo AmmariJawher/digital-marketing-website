@@ -12,6 +12,14 @@ body {
   clear: both;
 }
 
+.title-line {
+  width: 70px;
+  height: 5px;
+  background: #00ff6c;
+  border: none;
+  margin-bottom: 10px;
+}
+
 .tmpl-warp {
   width: 90%;
   margin: auto;
@@ -28,6 +36,15 @@ ul {
 
 li {
   display: inline;
+}
+
+.link {
+  font-size: 16px;
+  color: #295eff;
+}
+
+.link:hover {
+  color: #1e43b5;
 }
 
 /* Header Section */
@@ -105,14 +122,13 @@ header {}
 }
 
 .showcase hr {
-  color: #FFFFFF;
-  width: 40%;
+  border: 1px solid #FFFFFF;
+  width: 20%;
   margin-bottom: 40px;
 }
 
 .showcase-para {
   font-size: 20px;
-
 }
 
 .fast-selection {
@@ -136,27 +152,10 @@ header {}
   font-size: 25px;
 }
 
-.fast-selection a {
-  font-size: 16px;
-  color: #295eff;
-}
-
-.fast-selection a:hover {
-  color: #1e43b5;
-}
-
 /* Clients Section */
 .clients {
-  height: 400px;
+  height: 300px;
   padding-top: 70px;
-}
-
-.clients hr {
-  width: 70px;
-  height: 5px;
-  background: #00ff6c;
-  border: none;
-  margin-bottom: 10px;
 }
 
 .clients-list {
@@ -165,7 +164,64 @@ header {}
   margin-top: 70px;
 }
 
-.clients-list li{
+.clients-list li {
   margin: 0 30px;
   opacity: 0.5;
+}
+
+/* Clients Section */
+
+.technologies {
+  margin-bottom: 100px;
+}
+
+.technologies h2 {
+  margin-bottom: 50px;
+}
+
+.first-element {
+  height: 330px;
+  background-image: url("../img/a.jpeg");
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-bottom: 70px;
+}
+
+.first-element-description {
+  width: 600px;
+  float: right;
+  padding-top: 60px;
+}
+    <section>
+      <div class="tmpl-warp">
+        <hr class="title-line">
+        <h2> Determine The Right Strategy For Your Business</h2>
+        <p> Match your goals to our programs, explore your options, and map out your path to success.</p>
+        <ul>
+          <li>explore by </li>
+          <li></li>
+        </ul>
+      </div>
+    </section>
+
+.element h1 {
+  font-size: 35px;
+}
+
+.element p {
+  font-size: 18px;
+  margin: 30px 0;
+}
+
+.second-element {
+  height: 330px;
+  background-image: url("../img/a.jpeg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.second-element-description {
+  width: 600px;
+  float: left;
+  padding-top: 60px;
 }
