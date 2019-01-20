@@ -15,7 +15,7 @@ body {
 .title-line {
   width: 70px;
   height: 5px;
-  background: #00ff6c;
+  background: #295eff;
   border: none;
   margin-bottom: 10px;
 }
@@ -39,7 +39,6 @@ li {
 }
 
 .link {
-  font-size: 16px;
   color: #295eff;
 }
 
@@ -52,7 +51,7 @@ header {}
 
 .header-top-section {
   height: 30px;
-  padding-top: 10px;
+  padding-top: 8px;
   background: #E1E1E1;
 }
 
@@ -67,18 +66,27 @@ header {}
 
 .navbar li:nth-child(1) {
   border-bottom: solid #3B5998 3px;
+  transition: 0.1s;
 }
 
 .navbar li:nth-child(2) {
   border-bottom: solid #00ACED 3px;
+  transition: 0.1s;
 }
 
 .navbar li:nth-child(3) {
   border-bottom: solid #007BB6 3px;
+  transition: 0.1s;
 }
 
 .navbar li:nth-child(4) {
   border-bottom: solid #E22157 3px;
+  transition: 0.1s;
+}
+
+.navbar li:hover {
+  background-color: #cfcfcf;
+  transition: 0.01s;
 }
 
 .navbar i {
@@ -97,6 +105,12 @@ header {}
   float: left;
 }
 
+.logo img {
+  height: 100px;
+  margin-top: -28px;
+  width: auto;
+}
+
 .main-navbar {
   float: right;
   text-align: center;
@@ -110,8 +124,11 @@ header {}
 .showcase {
   height: 600px;
   color: #FFFFFF;
-  text-align: left;
-  background: #777777;
+  background-image: url("../img/showcase.jpeg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 800px;
+  background-color: #000000;
   position: relative;
 }
 
@@ -133,10 +150,8 @@ header {}
 
 .fast-selection {
   height: 110px;
-  margin: auto;
   padding-top: 20px;
   background: #FFFFFF;
-  width: 40%;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -170,7 +185,6 @@ header {}
 }
 
 /* Clients Section */
-
 .technologies {
   margin-bottom: 100px;
 }
@@ -179,49 +193,168 @@ header {}
   margin-bottom: 50px;
 }
 
-.first-element {
-  height: 330px;
-  background-image: url("../img/a.jpeg");
-  background-repeat: no-repeat;
-  background-position: left;
+.element {
   margin-bottom: 70px;
+  background-repeat: no-repeat;
+  height: 330px;
 }
 
-.first-element-description {
-  width: 600px;
-  float: right;
-  padding-top: 60px;
+.element-description {
+  width: 50%;
+  margin-top: 30px;
+  background: #FFFFFF;
+  padding: 20px;
 }
-    <section>
-      <div class="tmpl-warp">
-        <hr class="title-line">
-        <h2> Determine The Right Strategy For Your Business</h2>
-        <p> Match your goals to our programs, explore your options, and map out your path to success.</p>
-        <ul>
-          <li>explore by </li>
-          <li></li>
-        </ul>
-      </div>
-    </section>
 
-.element h1 {
+.element-description h1 {
   font-size: 35px;
 }
 
-.element p {
+.element-description p {
   font-size: 18px;
   margin: 30px 0;
 }
 
-.second-element {
-  height: 330px;
+.first-element {
   background-image: url("../img/a.jpeg");
-  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.first-element-description {
+  float: right;
+}
+
+.second-element {
+  background-image: url("../img/a.jpeg");
   background-position: right;
 }
 
 .second-element-description {
-  width: 600px;
   float: left;
-  padding-top: 60px;
+}
+
+/* Footer Section */
+footer {
+  height: 400px;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email-marketing, .become-a-client {
+  margin: 30px;
+  padding: 30px;
+  border: 1px solid #585858;
+  flex: 50%;
+  height: 260px;
+}
+
+.flexbox form {
+  padding-top: 30px;
+  font-size: 10;
+}
+
+.email-marketing input {
+  margin-bottom: 30px;
+}
+
+.become-a-client p {
+  padding-top: 30px;
+}
+
+.flexbox button {
+  border: none;
+  border-radius: none;
+  color: #000000;
+  background: #FFFFFF;
+  width: 200px;
+  height: 40px;
+  border: 1px solid #FFFFFF;
+}
+
+.flexbox button:hover {
+  color: #FFFFFF;
+  background: #000000;
+}
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+@media (max-width:961px) {
+  .tmpl-warp {
+    width: 95%;
+  }
+
+  /* Header Section */
+  .header-top-section email {
+    display: none;
+  }
+
+  /* Clients Brand Section */
+  .clients {
+    height: 350px;
+  }
+
+  .clients-list {
+    text-align: center;
+  }
+
+  .clients-list li {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0;
+  }
+
+  /* Technologies Section */
+  .element {
+    background: #FFFFFF;
+    margin-bottom: 70px;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+  }
+
+  .element-description {
+    float: none;
+    width: auto;
+  }
+
+  .element-description h1 {
+    font-size: 20px;
+  }
+
+  .element-description p {
+    font-size: 16px;
+    margin: 30px 0;
+  }
+
+  /* Footer Section */
+  footer {
+    height: auto;
+    background: #0065fc;
+  }
+
+  .flexbox {
+    display: inline-block;
+  }
+
+  .email-marketing, .become-a-client {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #FFFFFF;
+    flex: 50%;
+    height: auto;
+  }
+
+  .flexbox button:hover {
+    color: #000000;
+    background: #ffe603;
+    border: none;
+  }
+}
+
+@media (max-width:961px) {
 }
